@@ -1,0 +1,49 @@
+html,
+body {
+   height: 100%;
+   // position: relative;
+   // overflow-x: hidden;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+}
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.content {
+   flex: 1 0 auto;
+}
+.footer {
+   flex: 0 0 auto;
+}
+.container {
+   max-width: 1200px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+.container-fluid {
+   max-width: 100%;
+   margin: 0px auto;
+   padding: 0px 30px;
+}
+.title{
+   font-weight: 700;
+   font-size: 100px;
+   color: #000;
+   text-align: center;
+}
