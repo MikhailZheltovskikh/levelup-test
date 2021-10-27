@@ -216,7 +216,25 @@
             LevelUp
          </div>
          <div class="order__time">
-
+            <div class="order__time-title">До конца акции</div>
+            <div id="countdown" class="countdown">
+               <!-- <div class="countdown-number countdown-number-days">
+                 <span class="days countdown-time"></span>
+                 <span class="countdown-text">Days</span>
+               </div>
+               <div class="countdown-number countdown-number-hours">
+                 <span class="hours countdown-time"></span>
+                 <span class="countdown-text">Hours</span>
+               </div> -->
+               <div class="countdown-number">
+                 <span class="minutes countdown-time"></span>
+                 <span class="countdown-text">Минут</span>
+               </div>
+               <div class="countdown-number">
+                 <span class="seconds countdown-time"></span>
+                 <span class="countdown-text">Секунд</span>
+               </div>
+             </div>
          </div>
          <div class="order__inner">
             <div class="order__offer">
@@ -236,12 +254,14 @@
                   </div>
                   <form>
                      <div class="order__name">
-                        <label class="order__name">Укажите ваше имя</label>
+                        <label>Укажите ваше имя</label>
                         <input type="text" placeholder="Имя" required>
+                        <label class="order__name-pods" data-title="Пример: Иван" ></label>
                      </div>
                      <div class="order__phone">
-                        <label class="order__phone">Укажите ваш телевон</label>
+                        <label>Укажите ваш телевон</label>
                         <input type="text" id="phone" placeholder="Телефон" required>
+                        <label class="order__phone-pods" data-title="Пример: +7 (999) 999 9999" ></label>
                      </div>
                      <button class="order__btn">Заказать</button>
                   </form>

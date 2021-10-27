@@ -157,6 +157,9 @@
       margin: 0;
       width: 100%;
    }
+   .order__time{
+      flex-wrap: wrap;
+   }
 }
 @media (max-width: 430px){
    .promo__list li{

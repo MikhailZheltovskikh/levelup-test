@@ -30,8 +30,8 @@
    display: flex;
    justify-content: space-between;
 }
-.header__image{
-   img{
+.header__image {
+   img {
       width: 100%;
       object-fit: cover;
    }
@@ -255,9 +255,9 @@
       background-size: cover;
       background-position: center center;
       width: 88px;
-    height: 135px;
-    top: 97px;
-    left: 29px;
+      height: 135px;
+      top: 97px;
+      left: 29px;
       transform: rotate(-5deg);
    }
 }
@@ -294,7 +294,7 @@
          left: 0;
          transform: rotate(-45deg);
       }
-      & + li{
+      & + li {
          margin-left: 10px;
       }
    }
@@ -312,29 +312,28 @@
    display: flex;
    justify-content: space-around;
 }
-.order__offer-price{
+.order__offer-price {
    padding: 10px;
    border: 2px solid red;
 }
-.order__offer-title{
+.order__offer-title {
    color: #fff;
    font-size: 25px;
 }
-.order__offer-image{
-   img{
+.order__offer-image {
+   img {
       width: 100%;
       object-fit: cover;
    }
 }
 .order__form {
-  margin-left: 10px;
+   margin-left: 10px;
    border: 1px solid #000;
    background-color: #fff;
    opacity: 0.8;
    display: flex;
-   
 }
-.order__form-wrapper{
+.order__form-wrapper {
    margin: auto 0;
    text-align: center;
    padding: 10px;
@@ -344,7 +343,7 @@
    text-align: center;
    margin-bottom: 10px;
 }
-.order__offer-image{
+.order__offer-image {
    margin-bottom: 20px;
 }
 .order__name,
@@ -363,31 +362,102 @@
       margin-bottom: 10px;
    }
 }
+.order__name-pods {
+   position: relative;
+   display: none;
+   transition: all .3s;
+   &::after {
+      content: attr(data-title);
+      position: absolute;
+      top: -95px;
+      right: 0;
+      width: 100px;
+      background-color: rgb(211, 161, 161);
+   }
+}
+.order__name input:focus + .order__name-pods {
+   display: block;
+   margin: 0;
+}
+.order__phone-pods {
+   position: relative;
+   display: none;
+   transition: all .3s;
+   &::after {
+      content: attr(data-title);
+      position: absolute;
+      top: -95px;
+      right: 0;
+      width: 200px;
+      background-color: rgb(211, 161, 161);
+   }
+}
+.order__phone input:focus + .order__phone-pods {
+   display: block;
+   margin: 0;
+}
 .order__btn {
    border: none;
    width: 100%;
    padding: 10px 5px;
    background-color: yellow;
 }
-.order__offer-price{
+.order__offer-price {
    text-align: center;
 }
-.order__price-old{
+.order__price-old {
    font-size: 30px;
    color: #fff;
    text-decoration: line-through;
    display: inline-block;
 }
-.order__price-new{
+.order__price-new {
    display: inline-block;
    margin-left: 30px;
    font-size: 50px;
    color: red;
    font-weight: 700;
-   transition: all 500ms; 
-   &:hover{
-      transform: scale(1.6)
+   transition: all 500ms;
+   &:hover {
+      transform: scale(1.6);
    }
+}
+
+.order__time {
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.order__time-title {
+   font-size: 30px;
+   color: #fff;
+   font-weight: 700;
+}
+.countdown {
+   color: #fff;
+   display: inline-block;
+   font-weight: 100;
+   text-align: center;
+   font-size: 30px;
+}
+
+.countdown-number {
+   padding: 10px;
+   border-radius: 3px;
+   display: inline-block;
+}
+
+.countdown-time {
+   padding: 15px;
+   border-radius: 3px;
+   display: inline-block;
+}
+
+.countdown-text {
+   display: block;
+   padding-top: 5px;
+   font-size: 16px;
 }
 
 //end order
